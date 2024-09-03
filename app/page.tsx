@@ -11,7 +11,8 @@ export default function Home() {
 
       localStorage.setItem("loaderShown", "true");
 
-      const timer=setTimeout(() => {
+      const timer=setTimeout(() => 
+      {
         setLoading(false);
       }, 5000);
 
@@ -23,13 +24,12 @@ export default function Home() {
   return (
     <>
       {loading ? (
-        <Loader />
+        <Loader/>
       ) : (
-        <div className="grid place-content-center w-screen h-screen text-3xl">
+        <div className="grid place-content-center w-screen h-screen text-3xl main-body">
           This is going to be the best portfolio I've created. I hope you like it too.</div>
       )}
 
-      {/* <Loader/> */}
 
     </>
   );

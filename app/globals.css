@@ -31,3 +31,40 @@ body {
     text-wrap: balance;
   }
 }
+
+.main-body
+{
+  animation: 2s fade ease forwards;
+  opacity: 1;
+}
+.unmount-loader
+{
+  animation: 1s out ease;
+}
+
+@keyframes fade {
+
+  0%{
+    opacity: 0;
+    transform: translate(340,230);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0,0);
+  }
+  
+}
+@keyframes out {
+
+  0%{
+    opacity: 1;
+    transform: scale(1); 
+    filter: grayscale(0);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(3);
+    filter: grayscale(1);
+  }
+  
+}
